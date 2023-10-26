@@ -60,21 +60,6 @@ class College_Student extends Student {
     }
 }
 
-public class Main {
-    public static void main(String[] args) {
-        // creating 4 student objects
-        Student student1 = new Student("Layla", 19, true, "123-45-6789", "S123", 3.6);
-        Student student2 = new Student("Sara", 20, true, "987-65-4321", "S321", 3.8);
-        Student student3 = new Student("Ali", 21, true, "100-20-1234", "S246", 3.2);
-        Student student4 = new Student("Reem", 22, true, "888-88-8888", "S369", 3.4);
-
-        // printing student details
-        System.out.println(student1);
-        System.out.println(student2);
-        System.out.println(student3);
-        System.out.println(student4);
-    }
-}
 
 
 
