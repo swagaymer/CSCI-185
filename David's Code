@@ -1,0 +1,64 @@
+public class Teacher {
+    private String Id;
+    private String research_area;
+    private String rank;
+    private boolean tenured;
+
+    //fully loaded constructor
+    public Teacher(String Id, String research_area, String rank, boolean tenured) {
+        this.Id = Id;
+        this.research_area = research_area;
+        this.rank = rank;
+        this.tenured = tenured;
+    }
+
+    //copy constructor
+    public Teacher(Teacher t) {
+        if (t == null || t.Id.equals("") || t.research_area.equals("") || t.rank.equals("") || t.tenured != true) {
+            System.out.print("do not run code");
+        }
+        t.Id = this.Id;
+        t.research_area = this.research_area;
+        t.rank = this.rank;
+        t.tenured = this.tenured;
+    }
+
+    public void setId(String Id) {
+        this.Id = Id;
+    }
+
+    public void setResearch_area(String research_area) {
+        this.research_area = research_area;
+    }
+
+    public void setRank(String rank) {
+        this.rank = rank;
+    }
+
+    public void setTenureda(boolean tenured) {
+        this.tenured = tenured;
+    }
+
+    public String getId() {
+        return Id;
+    }
+
+    public String getResearch_area() {
+        return research_area;
+    }
+
+    public String getRank() {
+        return rank;
+    }
+
+    public boolean getTenured() {
+        return tenured;
+    }
+
+    public String toString() {
+        String output = "";
+        output += "\nId is:" + this.Id + "\nResearch Area is:" + this.research_area
+                + "\nRank is:" + this.rank + "\nTenured?:" + this.tenured;
+        return output;
+    }
+}
